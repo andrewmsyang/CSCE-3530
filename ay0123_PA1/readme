@@ -1,0 +1,5 @@
+1. Enter "make" to compile the program
+2. on cse01.cse.unt.edu machine: ./server
+3. on cse02.cse.unt.edu machine: ./client
+4. Enter the inputs
+5. Enter "make clean" to clean the binaries

@@ -1,0 +1,16 @@
+Compile: 
+
+run 'make'
+
+Execute:
+
+First start the server on the server machine like below:
+./tserver 6701
+Then start the client on the client machine like below:
+./tclient 6701
+
+Test:
+As is required in the assignment spec, any sent segment will be printed in the console. During the 3-way handshaking process, there should be two segments output in the client's console and one segment output in the server's console. As for the closing process, there shall be two segments of output for both sides. Besides, a 'Connection has been established' message and a 'Connection is closed'. Messages are expected to be displayed in the server's control. If all the segments are well printed in both consoles, and both server and client program exits in a normal way, then I believe the simulation works well.
+
+Clean:
+run 'make clean'

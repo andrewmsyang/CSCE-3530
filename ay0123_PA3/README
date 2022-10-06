@@ -1,0 +1,19 @@
+Compile:
+
+run 'make'
+
+Execute:
+
+First start the server on the server machine like below:
+./userver 6701
+Then start the client on any computer that is connected to the Internet as:
+./uclient 6701 input.txt
+
+## the input.txt is my test file. You can put any text file in the same directory to run the program.
+
+Test:
+As is required in the assignment spec, any fields of the UDP segment will be
+printed to the console. Also a 'client.out' and a 'server.out' file will separately
+be generated on client and server sides. It is easy to view the file contents via
+the 'cat' command. Please note that the segment payload has a maximum size of 1024
+bytes, and the exceeding bytes are truncated if the input file is larger than 1024B.

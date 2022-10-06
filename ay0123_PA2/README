@@ -1,0 +1,28 @@
+# Programming Assignment #2
+### Introduction
+In this assignment, a web proxy server is implemented. The server can be connected by a single client
+ and forward HTTP requests. To speed up, cache mechanism is used as in the specification.
+  
+  Note that in my implementation the logging file "list.txt" may contain more than 5 recent cached URLs. The logging file contains 
+ all the cached URLs from the beginning and updates by adding new lines at the top of the file.
+
+### Compile
+```bash
+make
+```
+To clean all the temporary files:
+```
+make clean
+```
+### Execute & Test
+Server:
+```bash
+./pyserver <server_port>
+```
+Client:
+```bash
+./client <server_port>
+url: <url>
+```
+Here <url> does not start with "http", e.g., [www.baidu.com](www.baidu.com) and [www.cplusplus.com](www.cplusplus.com).
+
